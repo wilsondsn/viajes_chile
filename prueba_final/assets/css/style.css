@@ -1,3 +1,15 @@
 nav {
 	transition: .5s;
 }
+
+nav svg {
+    width: 50px;
+}
+
+.negro {
+	background-color: #000;
+}
+
+nav.negro {
+	border-bottom: 4px solid #17A3B8;
+}
