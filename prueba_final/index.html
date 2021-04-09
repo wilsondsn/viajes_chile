@@ -65,6 +65,12 @@
     <!-- carrusel -->
     <div id="home">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    	<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
@@ -87,22 +93,23 @@
     </div>
     </div>
     <!-- Quiénes somos -->
+    <!-- BootstrapJS: Collapse - Aplicado a descriptores -->
     <section id="about" class="negro text-white d-none d-sm-block">
         <div class="container">
-            <h3 class="text-center">¿Quiénes somos?</h3>
+            <h3 class="text-center font-weight-bold">¿Quiénes somos?</h3>
             <hr>
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <button type="button" class="btn btn-primary btn-lg btn-block bg-info mb-2"><i class="fas fa-plane"></i></button>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores vel optio corrupti ullam, magni voluptatum unde aut consequatur facere doloremque, incidunt nam labore, cumque temporibus itaque iusto, voluptas earum aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi cumque vitae aliquam harum atque soluta! Et quaerat vitae aspernatur quis similique! Sed ex earum alias optio distinctio vitae omnis!</p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block bg-info mb-2" data-toggle="collapse" href="#viajes"><i class="fas fa-plane"></i></button>
+                    <p class="collapse" id="viajes">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores vel optio corrupti ullam, magni voluptatum unde aut consequatur facere doloremque, incidunt nam labore, cumque temporibus itaque iusto, voluptas earum aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi cumque vitae aliquam harum atque soluta! Et quaerat vitae aspernatur quis similique! Sed ex earum alias optio distinctio vitae omnis!</p>
                 </div>
-                <div class="col-12 col-md-4">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores vel optio corrupti ullam, magni voluptatum unde aut consequatur facere doloremque, incidunt nam labore, cumque temporibus itaque iusto, voluptas earum aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi cumque vitae aliquam harum atque soluta! Et quaerat vitae aspernatur quis similique! Sed ex earum alias optio distinctio vitae omnis!</p>
+                <div class="col-12 col-md-4" data-toggle="collapse" href="#destinos">
+                    <p class="collapse" id="destinos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores vel optio corrupti ullam, magni voluptatum unde aut consequatur facere doloremque, incidunt nam labore, cumque temporibus itaque iusto, voluptas earum aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi cumque vitae aliquam harum atque soluta! Et quaerat vitae aspernatur quis similique! Sed ex earum alias optio distinctio vitae omnis!</p>
                     <button type="button" class="btn btn-primary btn-lg btn-block bg-info"><i class="fas fa-mountain"></i></button>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-toggle="collapse" href="#tours">
                     <button type="button" class="btn btn-primary btn-lg btn-block bg-info mb-2"><i class="fas fa-route"></i></button>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores vel optio corrupti ullam, magni voluptatum unde aut consequatur facere doloremque, incidunt nam labore, cumque temporibus itaque iusto, voluptas earum aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi cumque vitae aliquam harum atque soluta! Et quaerat vitae aspernatur quis similique! Sed ex earum alias optio distinctio vitae omnis!</p>
+                    <p class="collapse" id="tours">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores vel optio corrupti ullam, magni voluptatum unde aut consequatur facere doloremque, incidunt nam labore, cumque temporibus itaque iusto, voluptas earum aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi cumque vitae aliquam harum atque soluta! Et quaerat vitae aspernatur quis similique! Sed ex earum alias optio distinctio vitae omnis!</p>
                 </div>
             </div>
         </div>
@@ -110,14 +117,14 @@
     <!-- Destacados -->
     <section id="featured" class="negro">
         <div class="container">
-            <h3 class="text-center text-white">Destacados</h3>
+            <h3 class="text-center text-white font-weight-bold">Destacados</h3>
             <hr>
             <div class="row">
                 <div class="col-12 col-md-3 card-group">
                     <div class="card">
                         <img src="assets/img/card1.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body bg-info text-white">
-                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <h5 class="font-weight-bold">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, qui consectetur? Corrupti, illo, error modi nobis quis quidem reiciendis.</p>
                         </div>
                     </div>
@@ -126,7 +133,7 @@
                     <div class="card">
                         <img src="assets/img/card2.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body bg-info text-white">
-                            <h5>Consectetur adipisicing elit</h5>
+                            <h5 class="font-weight-bold">Consectetur adipisicing elit</h5>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, qui consectetur? Corrupti, illo, error modi nobis quis quidem reiciendis.</p>
                         </div>
                     </div>
@@ -135,7 +142,7 @@
                     <div class="card">
                         <img src="assets/img/card3.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body bg-info text-white">
-                            <h5>Sed do eiusmod tempor incididunt ut labore</h5>
+                            <h5 class="font-weight-bold">Sed do eiusmod tempor incididunt ut labore</h5>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, qui consectetur? Corrupti, illo, error modi nobis quis quidem reiciendis.</p>
                         </div>
                     </div>
@@ -144,7 +151,7 @@
                     <div class="card">
                         <img src="assets/img/card4.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body bg-info text-white">
-                            <h5>Ut enim ad minim venian</h5>
+                            <h5 class="font-weight-bold">Ut enim ad minim venian</h5>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, qui consectetur? Corrupti, illo, error modi nobis quis quidem reiciendis.</p>
                         </div>
                     </div>
@@ -155,7 +162,7 @@
     <!-- Contacto -->
     <section id="contact" class="negro text-white">
         <div class="container">
-            <h3 class="text-center">Contacto</h3>
+            <h3 class="text-center font-weight-bold">Contacto</h3>
             <hr>
             <div class="row">
                 <!-- formulario typeform -->

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 nav {
 	transition: .5s;
 }
@@ -52,8 +58,8 @@ footer li a {
 
 @media only screen and (max-width:576px) {
 
-.navbar li:nth-child(2) {
-    display: none;
-}
+	.navbar li:nth-child(2) {
+	    display: none;
+	}
 
 }/* fin media query */

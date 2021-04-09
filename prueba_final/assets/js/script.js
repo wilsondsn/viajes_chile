@@ -1,6 +1,10 @@
 $(function() {
 
-    // Añadir clase al nav al hacer scroll
+    // BootstrapJS: ScrollSpy --> Marcar el en menú la navegación por scroll, cuando se realiza con el mouse.
+    // Añade la clase .active a cada item según se transite por cada uno.
+    $('body').scrollspy({ target: '#navbarNav' })
+
+        // Añadir clase al nav al hacer scroll
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var menu = $("nav");
@@ -15,10 +19,10 @@ $(function() {
 
     $("a").click(function(event) { // seleccionamos la etiqueta a y un clic como función del evento
         // alert(this.hash);
-        if (this.hash !== "") { 
-            event.preventDefault(); 
+        if (this.hash !== "") {
+            event.preventDefault();
 
-            var gato = this.hash; // 
+            var gato = this.hash;
 
             $('a').each(function() { // al hacer clic en un link, remover la clase active de otro que la tenga.
                 $(this).removeClass('active');
@@ -29,12 +33,22 @@ $(function() {
             $target = $(target);
 
             $("html, body").animate({
-                scrollTop: $(gato).offset().top 
+                scrollTop: $(gato).offset().top
             }, 800, function() { // 800 milisegundos
                 window.location.hash = gato; // busca la locación de la variable gato.
             });
         }
+
+    // Activa Tooltips
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
     });
+
+
+
 
 
 }); //
