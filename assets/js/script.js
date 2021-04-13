@@ -36,17 +36,17 @@ $(function() {
                 scrollTop: $(gato).offset().top
             }, 800, function() { // 800 milisegundos
                 window.location.hash = gato; // busca la locación de la variable gato.
-            });
-        }
+           });
+        };
+
+    });
+
+
 
     // Activa Tooltips
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
-    })
-
-
     });
-
 
 
 
