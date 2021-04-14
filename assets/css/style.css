@@ -24,6 +24,11 @@ section {
     padding: 6rem 0 0; /* Ayuda a que el menú no tape los títulos al hacer scroll*/
 }
 
+p {
+    text-align: justify;
+    font-size: .9rem;
+}
+
 .carousel-item img {
     object-fit: cover;
     height: 100vh;
@@ -54,6 +59,20 @@ footer li {
 
 footer li a {
     color: #fff;
+}
+
+.tooltip-inner {
+    background-color: #ffa713;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    border-top-color: #ffae08;
+}
+
+.tooltip {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: normal;
 }
 
 @media only screen and (max-width:576px) {
