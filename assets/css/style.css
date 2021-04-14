@@ -75,6 +75,12 @@ footer li a {
     line-height: normal;
 }
 
+@media only screen and (max-width: 768px) {
+    footer p, footer ul {
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width:576px) {
 
 	.navbar li:nth-child(2) {
